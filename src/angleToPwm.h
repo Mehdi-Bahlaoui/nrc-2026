@@ -13,7 +13,7 @@ const int team_roboticore[6][7]={ {389, 715, 968, 1428, 1827, 2212, 2528},
                     };
 
 
-                    int pulseForServoForAngle(int servoIndex, float angleDeg) {
+int pulseForServoForAngle(int servoIndex, float angleDeg) {
   if (angleDeg <= calibAngles[0]) return team_roboticore[servoIndex][0];
   if (angleDeg >= calibAngles[6]) return team_roboticore[servoIndex][6];
 
